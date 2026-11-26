@@ -25,14 +25,14 @@ export const generateImage = async (prompt: string): Promise<string> => {
       style: 'natural',
     });
 
-    if (!response.data[0]?.url) {
+    if (!response.data?.[0]?.url) {
       throw new Error('画像URLの生成に失敗しました');
     }
 
     // レスポンス後に少し待機
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    return response.data[0].url;
+    return response.data?.[0].url;
   } catch (err) {
     const error = err as Error & {
       type?: string;
