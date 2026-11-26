@@ -1,4 +1,4 @@
-import { describe, expect, it, beforeEach, jest } from '@jest/globals';
+import { describe, expect, it, beforeEach } from '@jest/globals';
 import { Hono } from 'hono';
 import { validateApiKey } from '../../middleware/auth';
 import env from '../../config/env';

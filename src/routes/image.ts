@@ -2,7 +2,6 @@ import { Hono } from 'hono';
 import { zValidator } from '@hono/zod-validator';
 import { z } from 'zod';
 import { generateImage } from '../services/openai';
-import type { ImageGenerationRequest } from '../types';
 
 const app = new Hono();
 
