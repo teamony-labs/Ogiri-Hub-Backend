@@ -19,11 +19,11 @@
   "description": "",
   "dependencies": {
     "@hono/node-server": "^1.13.7",
-    "@hono/zod-validator": "^0.4.2",
+    "@hono/zod-validator": "^0.9.1",
     "@types/node": "^22.10.1",
     "dotenv": "^16.4.6",
-    "openai": "^4.74.0",
-    "zod": "^3.23.8"
+    "openai": "^6.49.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
